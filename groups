@@ -1,5 +1,5 @@
-# UUID          Group Name
-False 	Non-Interactive Users
-bb5bd9087de90a07a5c5c0b1b9507965352dc50d       	puppet/puppet-qdr-distgit-core
-4131412ac8a5d1da38d7d734fa7ad10a113bc930        	puppet/puppet-qdr-distgit-ptl
-global:Registered-Users		Registered Users
+# UUID                                  	Group Name
+#
+4131412ac8a5d1da38d7d734fa7ad10a113bc930	puppet/puppet-qdr-distgit-ptl
+bb5bd9087de90a07a5c5c0b1b9507965352dc50d	puppet/puppet-qdr-distgit-core
+global:Registered-Users                 	Registered Users
