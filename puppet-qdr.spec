@@ -6,7 +6,7 @@ Name:                   puppet-qdr
 Version:                XXX
 Release:                XXX
 Summary:                Installs, configures, and managed Qpid dispatch router
-License:                Apache-2.0
+License:                ASL 2.0
 
 URL:                    https://git.openstack.org/cgit/openstack/%{name}
 
