@@ -45,3 +45,4 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/qdr/
 
 
 %changelog
+
