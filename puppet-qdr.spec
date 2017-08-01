@@ -46,3 +46,4 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/qdr/
 
 %changelog
 
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/puppet-qdr/commit/?id=24e7b93f8d4d831918cbb5ae46eb9d2270e2623d
