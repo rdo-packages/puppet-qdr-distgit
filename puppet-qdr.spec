@@ -1,16 +1,21 @@
-%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
+%{!?upstream_version: %global upstream_version %{commit}}
+%define upstream_name puppet-qdr
+%global commit dcd40cae919d2359fdce002f1edecc462eb25d18
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
+# DO NOT REMOVE ALPHATAG
+%global alphatag .%{shortcommit}git
 
 %define upstream_name openstack-qdr
 
 Name:                   puppet-qdr
-Version:                XXX
-Release:                XXX
+Version:                0.2.0
+Release:                1%{?alphatag}%{?dist}
 Summary:                Installs, configures, and managed Qpid dispatch router
 License:                ASL 2.0
 
 URL:                    https://git.openstack.org/cgit/openstack/%{name}
 
-Source0:                https://tarballs.openstack.org/%{name}/%{name}-%{version}.tar.gz
+Source0:                https://github.com/openstack/%{name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
 
 BuildArch:              noarch
 
@@ -45,4 +50,6 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/qdr/
 
 
 %changelog
+* Fri Aug 25 2017 Alfredo Moralejo <amoralej@redhat.com> 0.2.0-1.dcd40cagit
+- Pike update 0.2.0 (dcd40cae919d2359fdce002f1edecc462eb25d18)
 
