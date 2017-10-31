@@ -1,5 +1,9 @@
 %{!?upstream_version: %global upstream_version %{commit}}
+%if 0%{?dlrn}
+%define upstream_name openstack-qdr
+%else
 %define upstream_name puppet-qdr
+%endif
 %global commit dcd40cae919d2359fdce002f1edecc462eb25d18
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
