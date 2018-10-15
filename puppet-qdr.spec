@@ -3,7 +3,7 @@
 %define upstream_name openstack-qdr
 
 Name:                   puppet-qdr
-Version:                2.3.0
+Version:                2.3.1
 Release:                1%{?dist}
 Summary:                Installs, configures, and managed Qpid dispatch router
 License:                ASL 2.0
@@ -45,6 +45,9 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/qdr/
 
 
 %changelog
+* Mon Oct 15 2018 RDO <dev@lists.rdoproject.org> 2.3.1-1
+- Update to 2.3.1
+
 * Mon Aug 20 2018 RDO <dev@lists.rdoproject.org> 2.3.0-1
 - Update to 2.3.0
 
